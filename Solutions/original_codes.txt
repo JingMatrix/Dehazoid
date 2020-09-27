@@ -1,0 +1,258 @@
+.
+├── Android
+│   └── Dehazoid.zip
+├── C++
+│   ├── Dehaze
+│   │   ├── dehaze1.0
+│   │   │   ├── dark.jpg
+│   │   │   ├── dehaze1.0.vcxproj
+│   │   │   ├── dehaze1.0.vcxproj.filters
+│   │   │   ├── dehaze1.0.vcxproj.user
+│   │   │   ├── dehaze.cpp
+│   │   │   ├── Dehaze.h
+│   │   │   ├── main.cpp
+│   │   │   ├── opencv_world340d.dll
+│   │   │   ├── opencv_world340.dll
+│   │   │   ├── output
+│   │   │   │   └── 1.jpg
+│   │   │   └── sample
+│   │   │       ├── 1.jpg
+│   │   │       └── 2.jpg
+│   │   └── dehaze.sln
+│   └── DeHaze-master
+│       ├── dehaze.cpp
+│       ├── dehaze.h
+│       ├── guidedfilter.cpp
+│       ├── guidedfilter.h
+│       ├── main.cpp
+│       └── README.md
+├── Java
+│   └── HazeRemovalByDarkChannelPrior-master
+│       ├── HazeRemovalByDarkChannelPrior-master
+│       │   ├── ImageDehazeByDCP.iml
+│       │   ├── images
+│       │   │   ├── canon3.bmp
+│       │   │   ├── canon7.jpg
+│       │   │   ├── enhancement
+│       │   │   │   └── tulips.bmp
+│       │   │   ├── feathering
+│       │   │   │   ├── toy.bmp
+│       │   │   │   └── toy-mask.bmp
+│       │   │   ├── flags_input.png
+│       │   │   ├── flash
+│       │   │   │   ├── cave-flash.bmp
+│       │   │   │   └── cave-noflash.bmp
+│       │   │   ├── forest.jpg
+│       │   │   ├── gugong.bmp
+│       │   │   ├── hongkong.bmp
+│       │   │   ├── ny1.bmp
+│       │   │   ├── smoothing
+│       │   │   │   └── cat.bmp
+│       │   │   ├── tiananmen.png
+│       │   │   └── train.bmp
+│       │   ├── LICENSE
+│       │   ├── pom.xml
+│       │   ├── README-images
+│       │   │   ├── cave-flash.bmp
+│       │   │   ├── cave-noflash.bmp
+│       │   │   ├── flagsDehaze.png
+│       │   │   ├── flags.png
+│       │   │   ├── flashResult.png
+│       │   │   ├── gugongDehaze.png
+│       │   │   ├── gugong.png
+│       │   │   ├── nyDehaze.png
+│       │   │   ├── ny.png
+│       │   │   ├── toy.bmp
+│       │   │   ├── toy-mask.bmp
+│       │   │   ├── toyResult.png
+│       │   │   ├── trainDehaze.png
+│       │   │   ├── train.png
+│       │   │   ├── tulips.png
+│       │   │   └── tulipsResult.png
+│       │   ├── README.md
+│       │   ├── src
+│       │   │   ├── main
+│       │   │   │   └── java
+│       │   │   │       └── com
+│       │   │   │           └── isaac
+│       │   │   │               ├── darkchannel
+│       │   │   │               │   ├── com
+│       │   │   │               │   │   └── isaac
+│       │   │   │               │   │       └── darkchannel
+│       │   │   │               │   ├── DarkChannelPriorDehazing.java
+│       │   │   │               │   ├── ExampleEnhancement.java
+│       │   │   │               │   ├── ExampleFeathering.java
+│       │   │   │               │   ├── ExampleFlash.java
+│       │   │   │               │   └── ExampleSmoothing.java
+│       │   │   │               └── utils
+│       │   │   │                   ├── Filters.java
+│       │   │   │                   └── ImShow.java
+│       │   │   └── test
+│       │   │       └── java
+│       │   └── target
+│       │       ├── classes
+│       │       │   ├── com
+│       │       │   │   └── isaac
+│       │       │   │       ├── darkchannel
+│       │       │   │       │   ├── com
+│       │       │   │       │   │   └── isaac
+│       │       │   │       │   │       └── darkchannel
+│       │       │   │       │   ├── DarkChannelPriorDehazing.class
+│       │       │   │       │   ├── ExampleEnhancement.class
+│       │       │   │       │   ├── ExampleFeathering.class
+│       │       │   │       │   ├── ExampleFlash.class
+│       │       │   │       │   └── ExampleSmoothing.class
+│       │       │   │       └── utils
+│       │       │   │           ├── Filters.class
+│       │       │   │           └── ImShow.class
+│       │       │   └── META-INF
+│       │       │       ├── MANIFEST.MF
+│       │       │       └── maven
+│       │       │           └── com.isaac.darkchannel
+│       │       │               └── ImageDehazeByDCP
+│       │       │                   ├── pom.properties
+│       │       │                   └── pom.xml
+│       │       └── test-classes
+│       └── __MACOSX
+│           └── HazeRemovalByDarkChannelPrior-master
+│               ├── images
+│               │   ├── enhancement
+│               │   ├── feathering
+│               │   ├── flash
+│               │   └── smoothing
+│               ├── README-images
+│               ├── src
+│               │   └── main
+│               │       └── java
+│               │           └── com
+│               │               └── isaac
+│               │                   ├── darkchannel
+│               │                   └── utils
+│               └── target
+│                   └── classes
+│                       └── META-INF
+│                           └── maven
+│                               └── com.isaac.darkchannel
+│                                   └── ImageDehazeByDCP
+├── Matlab
+│   ├── Color-Attenuation-Prior-Dehazing
+│   │   ├── calVSMap.m
+│   │   ├── estA.m
+│   │   ├── guided-filter-code-v1
+│   │   │   ├── boxfilter.m
+│   │   │   ├── example_enhancement.m
+│   │   │   ├── example_feathering.m
+│   │   │   ├── example_flash.m
+│   │   │   ├── example_smoothing.m
+│   │   │   ├── fastguidedfilter_color.m
+│   │   │   ├── fastguidedfilter.m
+│   │   │   ├── guidedfilter_color.m
+│   │   │   ├── guidedfilter.m
+│   │   │   ├── img_enhancement
+│   │   │   │   └── tulips.bmp
+│   │   │   ├── img_feathering
+│   │   │   │   ├── toy.bmp
+│   │   │   │   └── toy-mask.bmp
+│   │   │   ├── img_flash
+│   │   │   │   ├── cave-flash.bmp
+│   │   │   │   └── cave-noflash.bmp
+│   │   │   ├── img_smoothing
+│   │   │   │   └── cat.bmp
+│   │   │   └── readme.txt
+│   │   ├── inputImgs
+│   │   │   ├── canon.jpg
+│   │   │   ├── city_1.jpg
+│   │   │   ├── city_2.jpg
+│   │   │   ├── cones.jpg
+│   │   │   ├── lake.jpg
+│   │   │   ├── mountain.jpg
+│   │   │   ├── ny_1.jpg
+│   │   │   ├── ny_2.jpg
+│   │   │   ├── pumpkins.jpg
+│   │   │   ├── readme.txt
+│   │   │   ├── stadium.jpg
+│   │   │   ├── toys.jpg
+│   │   │   ├── tree2.png
+│   │   │   └── trees.jpg
+│   │   ├── README.md
+│   │   ├── res
+│   │   │   ├── 15_beta1.png
+│   │   │   ├── input.png
+│   │   │   ├── originalDepthMap.png
+│   │   │   ├── output.png
+│   │   │   ├── position_of_the_atmospheric_light.png
+│   │   │   ├── readme.txt
+│   │   │   ├── refineDepthMap.png
+│   │   │   └── transmission.png
+│   │   └── runDehazing.m
+│   ├── Dark-Channel-Haze-Removal-master
+│   │   ├── dehaze_fast.m
+│   │   ├── dehaze.m
+│   │   ├── demo_fast.m
+│   │   ├── demo.m
+│   │   ├── forest.jpg
+│   │   ├── forest_recovered.jpg
+│   │   ├── get_atmosphere.m
+│   │   ├── get_dark_channel.m
+│   │   ├── get_laplacian.m
+│   │   ├── get_radiance.m
+│   │   ├── get_transmission_estimate.m
+│   │   ├── guided_filter.m
+│   │   ├── guidedfilter.m
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   └── window_sum_filter.m
+│   ├── DarkChnnel-JM
+│   │   ├── data1.mat
+│   │   ├── dehaze_fast.m
+│   │   ├── folder.mat
+│   │   ├── get_atmosphere.m
+│   │   ├── get_dark_channel.m
+│   │   ├── get_radiance.m
+│   │   ├── get_transmission_estimate.m
+│   │   └── test.m
+│   ├── DehazeNet
+│   │   ├── boxfilter.m
+│   │   ├── convConst.cpp
+│   │   ├── convConst.mexw64
+│   │   ├── convMax.m
+│   │   ├── convolution.m
+│   │   ├── data
+│   │   │   └── cones.jpg
+│   │   ├── dehaze.mat
+│   │   ├── demo.m
+│   │   ├── guidedfilter.m
+│   │   ├── README.md
+│   │   ├── run_cnn.m
+│   │   ├── sse.hpp
+│   │   └── wrappers.hpp
+│   └── ST-MRF-master
+│       ├── convBox.m
+│       ├── convConst.cpp
+│       ├── convConst.mexw64
+│       ├── demo.m
+│       ├── MinPooling.cpp
+│       ├── MinPooling.mexw64
+│       ├── README.md
+│       ├── sse.hpp
+│       ├── stMRF.m
+│       └── wrappers.hpp
+├── original_codes.txt
+└── Others
+    └── 无源代码
+        ├── HazeRemoval
+        │   ├── 暗通道先验图像去雾(C#版本）.exe
+        │   └── 暗通道先验图像去雾(VB6版本）.exe
+        └── 图像去雾综合版本
+            ├── API.bas
+            ├── Cimage.cls
+            ├── Cimage.vbw
+            ├── FrmTest.frm
+            ├── FrmTest.frx
+            ├── HazeRemoval.vbp
+            ├── HazeRemoval.vbw
+            ├── ImageProcessing.dll
+            ├── MSSCCPRJ.SCC
+            └── 图像去雾.exe
+
+81 directories, 174 files

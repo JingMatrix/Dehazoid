@@ -1,0 +1,805 @@
+.
+├── build.gradle
+├── dehaze
+│   ├── AndroidManifest.xml
+│   ├── build.gradle
+│   ├── dehaze.iml
+│   ├── gradle
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── ic_launcher-web.png
+│   ├── jni
+│   │   ├── CMakeLists.txt
+│   │   ├── dehaze.cpp
+│   │   ├── dehaze.h
+│   │   ├── fastguidedfilter.cpp
+│   │   ├── fastguidedfilter.h
+│   │   ├── guidedfilter.cpp
+│   │   ├── guidedfilter.h
+│   │   ├── jni_part.cpp
+│   │   └── jni.zip
+│   ├── local.properties
+│   ├── res
+│   │   ├── drawable
+│   │   ├── layout
+│   │   │   └── tutorial2_surface_view.xml
+│   │   ├── mipmap-anydpi-v26
+│   │   │   ├── ic_launcher_round.xml
+│   │   │   └── ic_launcher.xml
+│   │   ├── mipmap-hdpi
+│   │   │   ├── ic_launcher_background.png
+│   │   │   ├── ic_launcher_foreground.png
+│   │   │   ├── ic_launcher.png
+│   │   │   └── ic_launcher_round.png
+│   │   ├── mipmap-mdpi
+│   │   │   ├── ic_launcher_background.png
+│   │   │   ├── ic_launcher_foreground.png
+│   │   │   ├── ic_launcher.png
+│   │   │   └── ic_launcher_round.png
+│   │   ├── mipmap-xhdpi
+│   │   │   ├── ic_launcher_background.png
+│   │   │   ├── ic_launcher_foreground.png
+│   │   │   ├── ic_launcher.png
+│   │   │   └── ic_launcher_round.png
+│   │   ├── mipmap-xxhdpi
+│   │   │   ├── ic_launcher_background.png
+│   │   │   ├── ic_launcher_foreground.png
+│   │   │   ├── ic_launcher.png
+│   │   │   └── ic_launcher_round.png
+│   │   ├── mipmap-xxxhdpi
+│   │   │   ├── ic_launcher_background.png
+│   │   │   ├── ic_launcher_foreground.png
+│   │   │   ├── ic_launcher.png
+│   │   │   └── ic_launcher_round.png
+│   │   ├── values
+│   │   │   ├── ic_launcher_background.xml
+│   │   │   └── strings.xml
+│   │   ├── values-zh-rCN
+│   │   │   └── strings.xml
+│   │   └── xml
+│   │       └── backup_descriptor.xml
+│   └── src
+│       └── org
+│           └── opencv
+│               └── samples
+│                   └── tutorial2
+│                       ├── DeHaze.java
+│                       └── PreviewActivity.java
+├── Dehazoid.iml
+├── gradle
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── local.properties
+├── opencv
+│   ├── build.gradle
+│   ├── etc
+│   │   ├── haarcascades
+│   │   │   ├── haarcascade_eye_tree_eyeglasses.xml
+│   │   │   ├── haarcascade_eye.xml
+│   │   │   ├── haarcascade_frontalcatface_extended.xml
+│   │   │   ├── haarcascade_frontalcatface.xml
+│   │   │   ├── haarcascade_frontalface_alt2.xml
+│   │   │   ├── haarcascade_frontalface_alt_tree.xml
+│   │   │   ├── haarcascade_frontalface_alt.xml
+│   │   │   ├── haarcascade_frontalface_default.xml
+│   │   │   ├── haarcascade_fullbody.xml
+│   │   │   ├── haarcascade_lefteye_2splits.xml
+│   │   │   ├── haarcascade_licence_plate_rus_16stages.xml
+│   │   │   ├── haarcascade_lowerbody.xml
+│   │   │   ├── haarcascade_profileface.xml
+│   │   │   ├── haarcascade_righteye_2splits.xml
+│   │   │   ├── haarcascade_russian_plate_number.xml
+│   │   │   ├── haarcascade_smile.xml
+│   │   │   └── haarcascade_upperbody.xml
+│   │   ├── lbpcascades
+│   │   │   ├── lbpcascade_frontalcatface.xml
+│   │   │   ├── lbpcascade_frontalface_improved.xml
+│   │   │   ├── lbpcascade_frontalface.xml
+│   │   │   ├── lbpcascade_profileface.xml
+│   │   │   └── lbpcascade_silverware.xml
+│   │   ├── licenses
+│   │   │   ├── cpufeatures-LICENSE
+│   │   │   ├── cpufeatures-README.md
+│   │   │   ├── ippicv-EULA.txt
+│   │   │   ├── ippicv-readme.htm
+│   │   │   ├── ippiw-EULA.txt
+│   │   │   ├── ippiw-support.txt
+│   │   │   ├── ippiw-third-party-programs.txt
+│   │   │   ├── ittnotify-LICENSE.BSD
+│   │   │   ├── ittnotify-LICENSE.GPL
+│   │   │   ├── jasper-copyright
+│   │   │   ├── jasper-LICENSE
+│   │   │   ├── jasper-README
+│   │   │   ├── libjpeg-turbo-LICENSE.md
+│   │   │   ├── libjpeg-turbo-README.ijg
+│   │   │   ├── libjpeg-turbo-README.md
+│   │   │   ├── libpng-LICENSE
+│   │   │   ├── libpng-README
+│   │   │   ├── libtiff-COPYRIGHT
+│   │   │   ├── openexr-AUTHORS.ilmbase
+│   │   │   ├── openexr-AUTHORS.openexr
+│   │   │   ├── openexr-fix_msvc2013_errors.patch
+│   │   │   ├── openexr-LICENSE
+│   │   │   ├── protobuf-LICENSE
+│   │   │   ├── protobuf-README.md
+│   │   │   ├── quirc-LICENSE
+│   │   │   ├── SoftFloat-COPYING.txt
+│   │   │   ├── tbb-LICENSE
+│   │   │   └── tbb-README
+│   │   ├── valgrind_3rdparty.supp
+│   │   └── valgrind.supp
+│   ├── gradle
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── java
+│   │   ├── AndroidManifest.xml
+│   │   ├── build.gradle
+│   │   ├── javadoc
+│   │   │   ├── allclasses-frame.html
+│   │   │   ├── allclasses-noframe.html
+│   │   │   ├── constant-values.html
+│   │   │   ├── help-doc.html
+│   │   │   ├── index-all.html
+│   │   │   ├── index.html
+│   │   │   ├── org
+│   │   │   │   └── opencv
+│   │   │   │       ├── android
+│   │   │   │       │   ├── BaseLoaderCallback.html
+│   │   │   │       │   ├── Camera2Renderer.html
+│   │   │   │       │   ├── CameraBridgeViewBase.CvCameraViewFrame.html
+│   │   │   │       │   ├── CameraBridgeViewBase.CvCameraViewListener2.html
+│   │   │   │       │   ├── CameraBridgeViewBase.CvCameraViewListener.html
+│   │   │   │       │   ├── CameraBridgeViewBase.html
+│   │   │   │       │   ├── CameraBridgeViewBase.ListItemAccessor.html
+│   │   │   │       │   ├── CameraGLRendererBase.html
+│   │   │   │       │   ├── CameraGLSurfaceView.CameraTextureListener.html
+│   │   │   │       │   ├── CameraGLSurfaceView.html
+│   │   │   │       │   ├── CameraRenderer.html
+│   │   │   │       │   ├── FpsMeter.html
+│   │   │   │       │   ├── InstallCallbackInterface.html
+│   │   │   │       │   ├── JavaCamera2View.html
+│   │   │   │       │   ├── JavaCameraView.html
+│   │   │   │       │   ├── JavaCameraView.JavaCameraSizeAccessor.html
+│   │   │   │       │   ├── LoaderCallbackInterface.html
+│   │   │   │       │   ├── OpenCVLoader.html
+│   │   │   │       │   ├── package-frame.html
+│   │   │   │       │   ├── package-summary.html
+│   │   │   │       │   ├── package-tree.html
+│   │   │   │       │   └── Utils.html
+│   │   │   │       ├── calib3d
+│   │   │   │       │   ├── Calib3d.html
+│   │   │   │       │   ├── package-frame.html
+│   │   │   │       │   ├── package-summary.html
+│   │   │   │       │   ├── package-tree.html
+│   │   │   │       │   ├── StereoBM.html
+│   │   │   │       │   ├── StereoMatcher.html
+│   │   │   │       │   └── StereoSGBM.html
+│   │   │   │       ├── core
+│   │   │   │       │   ├── Algorithm.html
+│   │   │   │       │   ├── Core.html
+│   │   │   │       │   ├── Core.MinMaxLocResult.html
+│   │   │   │       │   ├── CvException.html
+│   │   │   │       │   ├── CvType.html
+│   │   │   │       │   ├── DMatch.html
+│   │   │   │       │   ├── KeyPoint.html
+│   │   │   │       │   ├── Mat.html
+│   │   │   │       │   ├── MatOfByte.html
+│   │   │   │       │   ├── MatOfDMatch.html
+│   │   │   │       │   ├── MatOfDouble.html
+│   │   │   │       │   ├── MatOfFloat4.html
+│   │   │   │       │   ├── MatOfFloat6.html
+│   │   │   │       │   ├── MatOfFloat.html
+│   │   │   │       │   ├── MatOfInt4.html
+│   │   │   │       │   ├── MatOfInt.html
+│   │   │   │       │   ├── MatOfKeyPoint.html
+│   │   │   │       │   ├── MatOfPoint2f.html
+│   │   │   │       │   ├── MatOfPoint3f.html
+│   │   │   │       │   ├── MatOfPoint3.html
+│   │   │   │       │   ├── MatOfPoint.html
+│   │   │   │       │   ├── MatOfRect2d.html
+│   │   │   │       │   ├── MatOfRect.html
+│   │   │   │       │   ├── MatOfRotatedRect.html
+│   │   │   │       │   ├── package-frame.html
+│   │   │   │       │   ├── package-summary.html
+│   │   │   │       │   ├── package-tree.html
+│   │   │   │       │   ├── Point3.html
+│   │   │   │       │   ├── Point.html
+│   │   │   │       │   ├── Range.html
+│   │   │   │       │   ├── Rect2d.html
+│   │   │   │       │   ├── Rect.html
+│   │   │   │       │   ├── RotatedRect.html
+│   │   │   │       │   ├── Scalar.html
+│   │   │   │       │   ├── Size.html
+│   │   │   │       │   ├── TermCriteria.html
+│   │   │   │       │   └── TickMeter.html
+│   │   │   │       ├── dnn
+│   │   │   │       │   ├── DictValue.html
+│   │   │   │       │   ├── Dnn.html
+│   │   │   │       │   ├── Layer.html
+│   │   │   │       │   ├── Net.html
+│   │   │   │       │   ├── package-frame.html
+│   │   │   │       │   ├── package-summary.html
+│   │   │   │       │   └── package-tree.html
+│   │   │   │       ├── features2d
+│   │   │   │       │   ├── AgastFeatureDetector.html
+│   │   │   │       │   ├── AKAZE.html
+│   │   │   │       │   ├── BFMatcher.html
+│   │   │   │       │   ├── BOWImgDescriptorExtractor.html
+│   │   │   │       │   ├── BOWKMeansTrainer.html
+│   │   │   │       │   ├── BOWTrainer.html
+│   │   │   │       │   ├── BRISK.html
+│   │   │   │       │   ├── DescriptorMatcher.html
+│   │   │   │       │   ├── FastFeatureDetector.html
+│   │   │   │       │   ├── Feature2D.html
+│   │   │   │       │   ├── Features2d.html
+│   │   │   │       │   ├── FlannBasedMatcher.html
+│   │   │   │       │   ├── GFTTDetector.html
+│   │   │   │       │   ├── KAZE.html
+│   │   │   │       │   ├── MSER.html
+│   │   │   │       │   ├── ORB.html
+│   │   │   │       │   ├── package-frame.html
+│   │   │   │       │   ├── package-summary.html
+│   │   │   │       │   ├── package-tree.html
+│   │   │   │       │   └── Params.html
+│   │   │   │       ├── imgcodecs
+│   │   │   │       │   ├── Imgcodecs.html
+│   │   │   │       │   ├── package-frame.html
+│   │   │   │       │   ├── package-summary.html
+│   │   │   │       │   └── package-tree.html
+│   │   │   │       ├── imgproc
+│   │   │   │       │   ├── CLAHE.html
+│   │   │   │       │   ├── GeneralizedHoughBallard.html
+│   │   │   │       │   ├── GeneralizedHoughGuil.html
+│   │   │   │       │   ├── GeneralizedHough.html
+│   │   │   │       │   ├── Imgproc.html
+│   │   │   │       │   ├── LineSegmentDetector.html
+│   │   │   │       │   ├── Moments.html
+│   │   │   │       │   ├── package-frame.html
+│   │   │   │       │   ├── package-summary.html
+│   │   │   │       │   ├── package-tree.html
+│   │   │   │       │   └── Subdiv2D.html
+│   │   │   │       ├── ml
+│   │   │   │       │   ├── ANN_MLP.html
+│   │   │   │       │   ├── Boost.html
+│   │   │   │       │   ├── DTrees.html
+│   │   │   │       │   ├── EM.html
+│   │   │   │       │   ├── KNearest.html
+│   │   │   │       │   ├── LogisticRegression.html
+│   │   │   │       │   ├── Ml.html
+│   │   │   │       │   ├── NormalBayesClassifier.html
+│   │   │   │       │   ├── package-frame.html
+│   │   │   │       │   ├── package-summary.html
+│   │   │   │       │   ├── package-tree.html
+│   │   │   │       │   ├── ParamGrid.html
+│   │   │   │       │   ├── RTrees.html
+│   │   │   │       │   ├── StatModel.html
+│   │   │   │       │   ├── SVM.html
+│   │   │   │       │   ├── SVMSGD.html
+│   │   │   │       │   └── TrainData.html
+│   │   │   │       ├── objdetect
+│   │   │   │       │   ├── BaseCascadeClassifier.html
+│   │   │   │       │   ├── CascadeClassifier.html
+│   │   │   │       │   ├── HOGDescriptor.html
+│   │   │   │       │   ├── Objdetect.html
+│   │   │   │       │   ├── package-frame.html
+│   │   │   │       │   ├── package-summary.html
+│   │   │   │       │   ├── package-tree.html
+│   │   │   │       │   └── QRCodeDetector.html
+│   │   │   │       ├── osgi
+│   │   │   │       │   ├── OpenCVInterface.html
+│   │   │   │       │   ├── OpenCVNativeLoader.html
+│   │   │   │       │   ├── package-frame.html
+│   │   │   │       │   ├── package-summary.html
+│   │   │   │       │   └── package-tree.html
+│   │   │   │       ├── photo
+│   │   │   │       │   ├── AlignExposures.html
+│   │   │   │       │   ├── AlignMTB.html
+│   │   │   │       │   ├── CalibrateCRF.html
+│   │   │   │       │   ├── CalibrateDebevec.html
+│   │   │   │       │   ├── CalibrateRobertson.html
+│   │   │   │       │   ├── MergeDebevec.html
+│   │   │   │       │   ├── MergeExposures.html
+│   │   │   │       │   ├── MergeMertens.html
+│   │   │   │       │   ├── MergeRobertson.html
+│   │   │   │       │   ├── package-frame.html
+│   │   │   │       │   ├── package-summary.html
+│   │   │   │       │   ├── package-tree.html
+│   │   │   │       │   ├── Photo.html
+│   │   │   │       │   ├── TonemapDrago.html
+│   │   │   │       │   ├── Tonemap.html
+│   │   │   │       │   ├── TonemapMantiuk.html
+│   │   │   │       │   └── TonemapReinhard.html
+│   │   │   │       ├── utils
+│   │   │   │       │   ├── Converters.html
+│   │   │   │       │   ├── package-frame.html
+│   │   │   │       │   ├── package-summary.html
+│   │   │   │       │   └── package-tree.html
+│   │   │   │       ├── video
+│   │   │   │       │   ├── BackgroundSubtractor.html
+│   │   │   │       │   ├── BackgroundSubtractorKNN.html
+│   │   │   │       │   ├── BackgroundSubtractorMOG2.html
+│   │   │   │       │   ├── DenseOpticalFlow.html
+│   │   │   │       │   ├── DISOpticalFlow.html
+│   │   │   │       │   ├── FarnebackOpticalFlow.html
+│   │   │   │       │   ├── KalmanFilter.html
+│   │   │   │       │   ├── package-frame.html
+│   │   │   │       │   ├── package-summary.html
+│   │   │   │       │   ├── package-tree.html
+│   │   │   │       │   ├── SparseOpticalFlow.html
+│   │   │   │       │   ├── SparsePyrLKOpticalFlow.html
+│   │   │   │       │   ├── VariationalRefinement.html
+│   │   │   │       │   └── Video.html
+│   │   │   │       └── videoio
+│   │   │   │           ├── package-frame.html
+│   │   │   │           ├── package-summary.html
+│   │   │   │           ├── package-tree.html
+│   │   │   │           ├── VideoCapture.html
+│   │   │   │           ├── Videoio.html
+│   │   │   │           └── VideoWriter.html
+│   │   │   ├── overview-frame.html
+│   │   │   ├── overview-summary.html
+│   │   │   ├── overview-tree.html
+│   │   │   ├── package-list
+│   │   │   ├── script.js
+│   │   │   ├── serialized-form.html
+│   │   │   └── stylesheet.css
+│   │   ├── res
+│   │   │   └── values
+│   │   │       └── attrs.xml
+│   │   └── src
+│   │       └── org
+│   │           └── opencv
+│   │               ├── android
+│   │               │   ├── AsyncServiceHelper.java
+│   │               │   ├── BaseLoaderCallback.java
+│   │               │   ├── Camera2Renderer.java
+│   │               │   ├── CameraBridgeViewBase.java
+│   │               │   ├── CameraGLRendererBase.java
+│   │               │   ├── CameraGLSurfaceView.java
+│   │               │   ├── CameraRenderer.java
+│   │               │   ├── FpsMeter.java
+│   │               │   ├── InstallCallbackInterface.java
+│   │               │   ├── JavaCamera2View.java
+│   │               │   ├── JavaCameraView.java
+│   │               │   ├── LoaderCallbackInterface.java
+│   │               │   ├── OpenCVLoader.java
+│   │               │   ├── StaticHelper.java
+│   │               │   └── Utils.java
+│   │               ├── calib3d
+│   │               │   ├── Calib3d.java
+│   │               │   ├── StereoBM.java
+│   │               │   ├── StereoMatcher.java
+│   │               │   └── StereoSGBM.java
+│   │               ├── core
+│   │               │   ├── Algorithm.java
+│   │               │   ├── Core.java
+│   │               │   ├── CvException.java
+│   │               │   ├── CvType.java
+│   │               │   ├── DMatch.java
+│   │               │   ├── KeyPoint.java
+│   │               │   ├── Mat.java
+│   │               │   ├── MatOfByte.java
+│   │               │   ├── MatOfDMatch.java
+│   │               │   ├── MatOfDouble.java
+│   │               │   ├── MatOfFloat4.java
+│   │               │   ├── MatOfFloat6.java
+│   │               │   ├── MatOfFloat.java
+│   │               │   ├── MatOfInt4.java
+│   │               │   ├── MatOfInt.java
+│   │               │   ├── MatOfKeyPoint.java
+│   │               │   ├── MatOfPoint2f.java
+│   │               │   ├── MatOfPoint3f.java
+│   │               │   ├── MatOfPoint3.java
+│   │               │   ├── MatOfPoint.java
+│   │               │   ├── MatOfRect2d.java
+│   │               │   ├── MatOfRect.java
+│   │               │   ├── MatOfRotatedRect.java
+│   │               │   ├── Point3.java
+│   │               │   ├── Point.java
+│   │               │   ├── Range.java
+│   │               │   ├── Rect2d.java
+│   │               │   ├── Rect.java
+│   │               │   ├── RotatedRect.java
+│   │               │   ├── Scalar.java
+│   │               │   ├── Size.java
+│   │               │   ├── TermCriteria.java
+│   │               │   └── TickMeter.java
+│   │               ├── dnn
+│   │               │   ├── DictValue.java
+│   │               │   ├── Dnn.java
+│   │               │   ├── Layer.java
+│   │               │   └── Net.java
+│   │               ├── engine
+│   │               │   └── OpenCVEngineInterface.aidl
+│   │               ├── features2d
+│   │               │   ├── AgastFeatureDetector.java
+│   │               │   ├── AKAZE.java
+│   │               │   ├── BFMatcher.java
+│   │               │   ├── BOWImgDescriptorExtractor.java
+│   │               │   ├── BOWKMeansTrainer.java
+│   │               │   ├── BOWTrainer.java
+│   │               │   ├── BRISK.java
+│   │               │   ├── DescriptorMatcher.java
+│   │               │   ├── FastFeatureDetector.java
+│   │               │   ├── Feature2D.java
+│   │               │   ├── Features2d.java
+│   │               │   ├── FlannBasedMatcher.java
+│   │               │   ├── GFTTDetector.java
+│   │               │   ├── KAZE.java
+│   │               │   ├── MSER.java
+│   │               │   ├── ORB.java
+│   │               │   └── Params.java
+│   │               ├── imgcodecs
+│   │               │   └── Imgcodecs.java
+│   │               ├── imgproc
+│   │               │   ├── CLAHE.java
+│   │               │   ├── GeneralizedHoughBallard.java
+│   │               │   ├── GeneralizedHoughGuil.java
+│   │               │   ├── GeneralizedHough.java
+│   │               │   ├── Imgproc.java
+│   │               │   ├── LineSegmentDetector.java
+│   │               │   ├── Moments.java
+│   │               │   └── Subdiv2D.java
+│   │               ├── ml
+│   │               │   ├── ANN_MLP.java
+│   │               │   ├── Boost.java
+│   │               │   ├── DTrees.java
+│   │               │   ├── EM.java
+│   │               │   ├── KNearest.java
+│   │               │   ├── LogisticRegression.java
+│   │               │   ├── Ml.java
+│   │               │   ├── NormalBayesClassifier.java
+│   │               │   ├── ParamGrid.java
+│   │               │   ├── RTrees.java
+│   │               │   ├── StatModel.java
+│   │               │   ├── SVM.java
+│   │               │   ├── SVMSGD.java
+│   │               │   └── TrainData.java
+│   │               ├── objdetect
+│   │               │   ├── BaseCascadeClassifier.java
+│   │               │   ├── CascadeClassifier.java
+│   │               │   ├── HOGDescriptor.java
+│   │               │   ├── Objdetect.java
+│   │               │   └── QRCodeDetector.java
+│   │               ├── osgi
+│   │               │   ├── OpenCVInterface.java
+│   │               │   └── OpenCVNativeLoader.java
+│   │               ├── photo
+│   │               │   ├── AlignExposures.java
+│   │               │   ├── AlignMTB.java
+│   │               │   ├── CalibrateCRF.java
+│   │               │   ├── CalibrateDebevec.java
+│   │               │   ├── CalibrateRobertson.java
+│   │               │   ├── MergeDebevec.java
+│   │               │   ├── MergeExposures.java
+│   │               │   ├── MergeMertens.java
+│   │               │   ├── MergeRobertson.java
+│   │               │   ├── Photo.java
+│   │               │   ├── TonemapDrago.java
+│   │               │   ├── Tonemap.java
+│   │               │   ├── TonemapMantiuk.java
+│   │               │   └── TonemapReinhard.java
+│   │               ├── utils
+│   │               │   └── Converters.java
+│   │               ├── video
+│   │               │   ├── BackgroundSubtractor.java
+│   │               │   ├── BackgroundSubtractorKNN.java
+│   │               │   ├── BackgroundSubtractorMOG2.java
+│   │               │   ├── DenseOpticalFlow.java
+│   │               │   ├── DISOpticalFlow.java
+│   │               │   ├── FarnebackOpticalFlow.java
+│   │               │   ├── KalmanFilter.java
+│   │               │   ├── SparseOpticalFlow.java
+│   │               │   ├── SparsePyrLKOpticalFlow.java
+│   │               │   ├── VariationalRefinement.java
+│   │               │   └── Video.java
+│   │               └── videoio
+│   │                   ├── VideoCapture.java
+│   │                   ├── Videoio.java
+│   │                   └── VideoWriter.java
+│   ├── local.properties
+│   ├── native
+│   │   └── jni
+│   │       ├── abi-armeabi-v7a
+│   │       │   ├── OpenCVConfig.cmake
+│   │       │   ├── OpenCVConfig-version.cmake
+│   │       │   ├── OpenCVModules.cmake
+│   │       │   └── OpenCVModules-release.cmake
+│   │       ├── android.toolchain.cmake
+│   │       ├── include
+│   │       │   └── opencv2
+│   │       │       ├── calib3d
+│   │       │       │   ├── calib3d_c.h
+│   │       │       │   └── calib3d.hpp
+│   │       │       ├── calib3d.hpp
+│   │       │       ├── core
+│   │       │       │   ├── affine.hpp
+│   │       │       │   ├── base.hpp
+│   │       │       │   ├── bindings_utils.hpp
+│   │       │       │   ├── bufferpool.hpp
+│   │       │       │   ├── check.hpp
+│   │       │       │   ├── core_c.h
+│   │       │       │   ├── core.hpp
+│   │       │       │   ├── cuda
+│   │       │       │   │   ├── block.hpp
+│   │       │       │   │   ├── border_interpolate.hpp
+│   │       │       │   │   ├── color.hpp
+│   │       │       │   │   ├── common.hpp
+│   │       │       │   │   ├── datamov_utils.hpp
+│   │       │       │   │   ├── detail
+│   │       │       │   │   │   ├── color_detail.hpp
+│   │       │       │   │   │   ├── reduce.hpp
+│   │       │       │   │   │   ├── reduce_key_val.hpp
+│   │       │       │   │   │   ├── transform_detail.hpp
+│   │       │       │   │   │   ├── type_traits_detail.hpp
+│   │       │       │   │   │   └── vec_distance_detail.hpp
+│   │       │       │   │   ├── dynamic_smem.hpp
+│   │       │       │   │   ├── emulation.hpp
+│   │       │       │   │   ├── filters.hpp
+│   │       │       │   │   ├── funcattrib.hpp
+│   │       │       │   │   ├── functional.hpp
+│   │       │       │   │   ├── limits.hpp
+│   │       │       │   │   ├── reduce.hpp
+│   │       │       │   │   ├── saturate_cast.hpp
+│   │       │       │   │   ├── scan.hpp
+│   │       │       │   │   ├── simd_functions.hpp
+│   │       │       │   │   ├── transform.hpp
+│   │       │       │   │   ├── type_traits.hpp
+│   │       │       │   │   ├── utility.hpp
+│   │       │       │   │   ├── vec_distance.hpp
+│   │       │       │   │   ├── vec_math.hpp
+│   │       │       │   │   ├── vec_traits.hpp
+│   │       │       │   │   ├── warp.hpp
+│   │       │       │   │   ├── warp_reduce.hpp
+│   │       │       │   │   └── warp_shuffle.hpp
+│   │       │       │   ├── cuda.hpp
+│   │       │       │   ├── cuda.inl.hpp
+│   │       │       │   ├── cuda_stream_accessor.hpp
+│   │       │       │   ├── cuda_types.hpp
+│   │       │       │   ├── cv_cpu_dispatch.h
+│   │       │       │   ├── cv_cpu_helper.h
+│   │       │       │   ├── cvdef.h
+│   │       │       │   ├── cvstd.hpp
+│   │       │       │   ├── cvstd.inl.hpp
+│   │       │       │   ├── cvstd_wrapper.hpp
+│   │       │       │   ├── directx.hpp
+│   │       │       │   ├── eigen.hpp
+│   │       │       │   ├── fast_math.hpp
+│   │       │       │   ├── hal
+│   │       │       │   │   ├── hal.hpp
+│   │       │       │   │   ├── interface.h
+│   │       │       │   │   ├── intrin_avx.hpp
+│   │       │       │   │   ├── intrin_cpp.hpp
+│   │       │       │   │   ├── intrin_forward.hpp
+│   │       │       │   │   ├── intrin.hpp
+│   │       │       │   │   ├── intrin_neon.hpp
+│   │       │       │   │   ├── intrin_sse_em.hpp
+│   │       │       │   │   ├── intrin_sse.hpp
+│   │       │       │   │   └── intrin_vsx.hpp
+│   │       │       │   ├── mat.hpp
+│   │       │       │   ├── mat.inl.hpp
+│   │       │       │   ├── matx.hpp
+│   │       │       │   ├── neon_utils.hpp
+│   │       │       │   ├── ocl_genbase.hpp
+│   │       │       │   ├── ocl.hpp
+│   │       │       │   ├── opencl
+│   │       │       │   │   ├── ocl_defs.hpp
+│   │       │       │   │   ├── opencl_info.hpp
+│   │       │       │   │   ├── opencl_svm.hpp
+│   │       │       │   │   └── runtime
+│   │       │       │   │       ├── autogenerated
+│   │       │       │   │       │   ├── opencl_clamdblas.hpp
+│   │       │       │   │       │   ├── opencl_clamdfft.hpp
+│   │       │       │   │       │   ├── opencl_core.hpp
+│   │       │       │   │       │   ├── opencl_core_wrappers.hpp
+│   │       │       │   │       │   ├── opencl_gl.hpp
+│   │       │       │   │       │   └── opencl_gl_wrappers.hpp
+│   │       │       │   │       ├── opencl_clamdblas.hpp
+│   │       │       │   │       ├── opencl_clamdfft.hpp
+│   │       │       │   │       ├── opencl_core.hpp
+│   │       │       │   │       ├── opencl_core_wrappers.hpp
+│   │       │       │   │       ├── opencl_gl.hpp
+│   │       │       │   │       ├── opencl_gl_wrappers.hpp
+│   │       │       │   │       ├── opencl_svm_20.hpp
+│   │       │       │   │       ├── opencl_svm_definitions.hpp
+│   │       │       │   │       └── opencl_svm_hsa_extension.hpp
+│   │       │       │   ├── opengl.hpp
+│   │       │       │   ├── operations.hpp
+│   │       │       │   ├── optim.hpp
+│   │       │       │   ├── ovx.hpp
+│   │       │       │   ├── persistence.hpp
+│   │       │       │   ├── saturate.hpp
+│   │       │       │   ├── softfloat.hpp
+│   │       │       │   ├── sse_utils.hpp
+│   │       │       │   ├── traits.hpp
+│   │       │       │   ├── types_c.h
+│   │       │       │   ├── types.hpp
+│   │       │       │   ├── utility.hpp
+│   │       │       │   ├── utils
+│   │       │       │   │   ├── filesystem.hpp
+│   │       │       │   │   ├── logger.defines.hpp
+│   │       │       │   │   ├── logger.hpp
+│   │       │       │   │   └── trace.hpp
+│   │       │       │   ├── va_intel.hpp
+│   │       │       │   ├── version.hpp
+│   │       │       │   └── vsx_utils.hpp
+│   │       │       ├── core.hpp
+│   │       │       ├── cvconfig.h
+│   │       │       ├── dnn
+│   │       │       │   ├── all_layers.hpp
+│   │       │       │   ├── dict.hpp
+│   │       │       │   ├── dnn.hpp
+│   │       │       │   ├── dnn.inl.hpp
+│   │       │       │   ├── layer.details.hpp
+│   │       │       │   ├── layer.hpp
+│   │       │       │   ├── shape_utils.hpp
+│   │       │       │   └── version.hpp
+│   │       │       ├── dnn.hpp
+│   │       │       ├── features2d
+│   │       │       │   ├── features2d.hpp
+│   │       │       │   └── hal
+│   │       │       │       └── interface.h
+│   │       │       ├── features2d.hpp
+│   │       │       ├── flann
+│   │       │       │   ├── all_indices.h
+│   │       │       │   ├── allocator.h
+│   │       │       │   ├── any.h
+│   │       │       │   ├── autotuned_index.h
+│   │       │       │   ├── composite_index.h
+│   │       │       │   ├── config.h
+│   │       │       │   ├── defines.h
+│   │       │       │   ├── dist.h
+│   │       │       │   ├── dummy.h
+│   │       │       │   ├── dynamic_bitset.h
+│   │       │       │   ├── flann_base.hpp
+│   │       │       │   ├── flann.hpp
+│   │       │       │   ├── general.h
+│   │       │       │   ├── ground_truth.h
+│   │       │       │   ├── heap.h
+│   │       │       │   ├── hierarchical_clustering_index.h
+│   │       │       │   ├── index_testing.h
+│   │       │       │   ├── kdtree_index.h
+│   │       │       │   ├── kdtree_single_index.h
+│   │       │       │   ├── kmeans_index.h
+│   │       │       │   ├── linear_index.h
+│   │       │       │   ├── logger.h
+│   │       │       │   ├── lsh_index.h
+│   │       │       │   ├── lsh_table.h
+│   │       │       │   ├── matrix.h
+│   │       │       │   ├── miniflann.hpp
+│   │       │       │   ├── nn_index.h
+│   │       │       │   ├── object_factory.h
+│   │       │       │   ├── params.h
+│   │       │       │   ├── random.h
+│   │       │       │   ├── result_set.h
+│   │       │       │   ├── sampling.h
+│   │       │       │   ├── saving.h
+│   │       │       │   ├── simplex_downhill.h
+│   │       │       │   └── timer.h
+│   │       │       ├── flann.hpp
+│   │       │       ├── highgui
+│   │       │       │   ├── highgui_c.h
+│   │       │       │   └── highgui.hpp
+│   │       │       ├── highgui.hpp
+│   │       │       ├── imgcodecs
+│   │       │       │   ├── imgcodecs_c.h
+│   │       │       │   ├── imgcodecs.hpp
+│   │       │       │   ├── ios.h
+│   │       │       │   └── legacy
+│   │       │       │       └── constants_c.h
+│   │       │       ├── imgcodecs.hpp
+│   │       │       ├── imgproc
+│   │       │       │   ├── detail
+│   │       │       │   │   └── gcgraph.hpp
+│   │       │       │   ├── hal
+│   │       │       │   │   ├── hal.hpp
+│   │       │       │   │   └── interface.h
+│   │       │       │   ├── imgproc_c.h
+│   │       │       │   ├── imgproc.hpp
+│   │       │       │   └── types_c.h
+│   │       │       ├── imgproc.hpp
+│   │       │       ├── ml
+│   │       │       │   ├── ml.hpp
+│   │       │       │   └── ml.inl.hpp
+│   │       │       ├── ml.hpp
+│   │       │       ├── objdetect
+│   │       │       │   ├── detection_based_tracker.hpp
+│   │       │       │   └── objdetect.hpp
+│   │       │       ├── objdetect.hpp
+│   │       │       ├── opencv.hpp
+│   │       │       ├── opencv_modules.hpp
+│   │       │       ├── photo
+│   │       │       │   ├── cuda.hpp
+│   │       │       │   ├── legacy
+│   │       │       │   │   └── constants_c.h
+│   │       │       │   └── photo.hpp
+│   │       │       ├── photo.hpp
+│   │       │       ├── stitching
+│   │       │       │   ├── detail
+│   │       │       │   │   ├── autocalib.hpp
+│   │       │       │   │   ├── blenders.hpp
+│   │       │       │   │   ├── camera.hpp
+│   │       │       │   │   ├── exposure_compensate.hpp
+│   │       │       │   │   ├── matchers.hpp
+│   │       │       │   │   ├── motion_estimators.hpp
+│   │       │       │   │   ├── seam_finders.hpp
+│   │       │       │   │   ├── timelapsers.hpp
+│   │       │       │   │   ├── util.hpp
+│   │       │       │   │   ├── util_inl.hpp
+│   │       │       │   │   ├── warpers.hpp
+│   │       │       │   │   └── warpers_inl.hpp
+│   │       │       │   └── warpers.hpp
+│   │       │       ├── stitching.hpp
+│   │       │       ├── video
+│   │       │       │   ├── background_segm.hpp
+│   │       │       │   ├── legacy
+│   │       │       │   │   └── constants_c.h
+│   │       │       │   ├── tracking.hpp
+│   │       │       │   └── video.hpp
+│   │       │       ├── video.hpp
+│   │       │       ├── videoio
+│   │       │       │   ├── cap_ios.h
+│   │       │       │   ├── legacy
+│   │       │       │   │   └── constants_c.h
+│   │       │       │   ├── registry.hpp
+│   │       │       │   ├── videoio_c.h
+│   │       │       │   └── videoio.hpp
+│   │       │       └── videoio.hpp
+│   │       ├── OpenCV-arm64-v8a.mk
+│   │       ├── OpenCV-armeabi-v7a.mk
+│   │       ├── OpenCVConfig.cmake
+│   │       ├── OpenCVConfig-version.cmake
+│   │       ├── OpenCV.mk
+│   │       ├── OpenCV-x86_64.mk
+│   │       └── OpenCV-x86.mk
+│   ├── opencv.iml
+│   └── sdk.iml
+├── original_codes.txt
+├── sdk
+│   └── native
+│       ├── 3rdparty
+│       │   └── libs
+│       │       └── armeabi-v7a
+│       │           ├── libcpufeatures.a
+│       │           ├── libIlmImf.a
+│       │           ├── liblibjasper.a
+│       │           ├── liblibjpeg-turbo.a
+│       │           ├── liblibpng.a
+│       │           ├── liblibprotobuf.a
+│       │           ├── liblibtiff.a
+│       │           ├── liblibwebp.a
+│       │           ├── libquirc.a
+│       │           ├── libtbb.a
+│       │           └── libtegra_hal.a
+│       ├── libs
+│       │   └── armeabi-v7a
+│       │       └── libopencv_java4.so
+│       └── staticlibs
+│           └── armeabi-v7a
+│               ├── libopencv_calib3d.a
+│               ├── libopencv_core.a
+│               ├── libopencv_dnn.a
+│               ├── libopencv_features2d.a
+│               ├── libopencv_flann.a
+│               ├── libopencv_highgui.a
+│               ├── libopencv_imgcodecs.a
+│               ├── libopencv_imgproc.a
+│               ├── libopencv_ml.a
+│               ├── libopencv_objdetect.a
+│               ├── libopencv_photo.a
+│               ├── libopencv_stitching.a
+│               ├── libopencv_video.a
+│               └── libopencv_videoio.a
+└── settings.gradle
+
+111 directories, 691 files

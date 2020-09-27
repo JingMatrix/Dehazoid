@@ -1,0 +1,60 @@
+.
+├── refs.txt
+├── 开发学习资料
+│   ├── Android
+│   │   ├── 12-第一行代码 Android 第2版-郭霖-人邮-2016.12-P580@www.java1234.com.pdf
+│   │   ├── Android NDK Beginner's Guide (2nd ed.) [Ratabouil 2015-04-30].pdf
+│   │   ├── Android多媒体开发高级编程.（美）艾佛瑞.pdf
+│   │   ├── Android平台特效相机软件系统的设计与实现.pdf
+│   │   ├── Android系统下基于NDK方式的图形开发_王有禄.pdf
+│   │   ├── Gradle_Recipes_for_Android.pdf
+│   │   ├── Pro Android C++ with the NDK.pdf
+│   │   ├── 基于Android平台多功能特效相机的设计与实现_江志俭.caj
+│   │   ├── 基于Android平台的相机特效模式的研究与实现_李莹.caj
+│   │   ├── 基于Android的移动视频监控系统的设计与实现_李飞霞.caj
+│   │   └── 精通ANDROID+5多媒体开发.pdf
+│   ├── C++.lnk
+│   ├── CV Library
+│   │   ├── LearningOpenCV.pdf
+│   │   ├── Mastering OpenCV Android Application Programming.pdf
+│   │   ├── Mastering_opencv.pdf
+│   │   ├── opencv_tutorials.pdf
+│   │   ├── OReilly.Learning.OpenCV.3.2016.12.pdf
+│   │   └── 学习OpenCV(中文).pdf
+│   ├── image processing
+│   │   ├── Digital Image Processing Gonzalez.pdf
+│   │   └── 数字图像处理(中译第三版)[冈萨雷斯].pdf
+│   ├── Java
+│   │   ├── Core Java. Volume I. Fundamentals, 8th Edition.pdf
+│   │   └── JAVA核心技术.pdf
+│   ├── orthers
+│   │   ├── Android-NDK.pdf
+│   │   ├── gradle userguide.pdf
+│   │   ├── jni.pdf
+│   │   └── kotlin-docs.pdf
+│   └── Project Manage
+│       └── Software Engineering by Somerville.pdf
+└── 算法理论研究
+    ├── raw
+    │   ├── 修正大气耗散函数的单幅图像去雾.pdf
+    │   ├── 偏振光谱图像去雾技术研究.pdf
+    │   ├── 图像去雾的方法研究_孙立夫.pdf
+    │   ├── 基于FPGA的实时视频图像去雾系统.pdf
+    │   ├── 基于马尔可夫随机场框架的单幅图像去雾.pdf
+    │   └── 大气散射校正静态实时偏振图像去雾技术_夏璞.pdf
+    ├── 其他方法
+    │   ├── 06738487.pdf
+    │   ├── A fast single image haze removal algorithm using color attenuation prior.pdf
+    │   └── Fast visibility restoration from a single color or gray level image.pdf
+    ├── 图像理论
+    │   └── wavelet.pdf
+    └── 暗通道
+        ├── important
+        │   ├── dehaze.pdf
+        │   ├── guidedfilter.pdf
+        │   └── Vision and the atmosphere.pdf
+        └── improvement
+            ├── A fast algorithm for local minimum and maximum.pdf
+            └── Weighted Guided Image Filtering.pdf
+
+14 directories, 43 files
